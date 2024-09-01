@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Skin Tone Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Skin Tone Detection</h1>
+    <form id="image-form">
+        <input type="file" id="image" name="image">
+        <button id="submit">Detect Skin Tone</button>
+    </form>
+    <div id="result">
+        <p id="skin-tone"></p>
+        <p id="color-name"></p>
+        <p id="color-hex"></p>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
