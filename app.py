@@ -6,7 +6,7 @@ from PIL import Image
 import io
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": ["https://your-netlify-domain.netlify.app"]}})
+CORS(app, resources={r"/*": {"origins": ["https://storied-kangaroo-bf7b34.netlify.app"]}})
 
 def skin_tone_to_color(skin_tone_value):
     if skin_tone_value < 80:
